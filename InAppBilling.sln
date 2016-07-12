@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InAppBilling", "InAppBilling\InAppBilling.csproj", "{24469D67-FD6D-4AD3-BBBB-D7F9A499F9E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Droid", "Droid\Droid.csproj", "{5C4565FB-E523-413B-A60A-68C5998816EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{24469D67-FD6D-4AD3-BBBB-D7F9A499F9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24469D67-FD6D-4AD3-BBBB-D7F9A499F9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24469D67-FD6D-4AD3-BBBB-D7F9A499F9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C4565FB-E523-413B-A60A-68C5998816EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C4565FB-E523-413B-A60A-68C5998816EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C4565FB-E523-413B-A60A-68C5998816EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C4565FB-E523-413B-A60A-68C5998816EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
