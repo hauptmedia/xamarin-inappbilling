@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Hauptmedia.InAppBilling.Forms.TransactionDebugPage">
+	<ContentPage.Content>
+		<StackLayout>
+			<TableView Intent="Data">
+			    <TableRoot>
+			        <TableSection Title="Payment Transaction Data">
+						<TextCell Text="Transaction Identifier" Detail="{Binding PaymentTransaction.TransactionIdentifier}"/>
+						<TextCell Text="Transaction State" Detail="{Binding PaymentTransaction.TransactionStateString}"/>
+						<TextCell Text="Product Identifier" Detail="{Binding PaymentTransaction.ProductIdentifier}"/>
+						<TextCell Text="Token" Detail="{Binding PaymentTransaction.Token}"/>
+					</TableSection>
+			    </TableRoot>
+			</TableView>
+
+			<Button Text="Consume" Command="{Binding ConsumeCommand}"></Button>
+		</StackLayout>
+		
+	</ContentPage.Content>
+</ContentPage>

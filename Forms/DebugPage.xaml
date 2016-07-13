@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="Hauptmedia.InAppBilling.Forms.DebugPage">
+	<ContentPage.Content>
+		<StackLayout>
+
+			<TableView Intent="Data">
+			    <TableRoot>
+			        <TableSection Title="In-App Billing Status">
+						<TextCell Text="Payments available" Detail="{Binding CanMakePayments}"/>
+						<TextCell Text="Subscriptions available" Detail="{Binding CanMakeSubscriptions}"/>
+					</TableSection>
+
+			        <TableSection Title="Products">
+						<ViewCell>
+                    		<Button Text="View Products" Clicked="OnViewProductsClicked"></Button>
+						</ViewCell>
+					</TableSection>
+					
+
+			        <TableSection Title="Transactions">
+						<ViewCell>
+                    		<Button Text="View Transactions" Clicked="OnViewTransactionsClicked"></Button>
+						</ViewCell>
+					</TableSection>
+				</TableRoot>
+			</TableView>
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

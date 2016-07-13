@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Hauptmedia.InAppBilling.Forms.ProductDebugPage">
+	<ContentPage.Content>
+
+		<StackLayout>
+			<TableView Intent="Data">
+			    <TableRoot>
+			        <TableSection Title="Product Data">
+						<TextCell Text="Product Identifier" Detail="{Binding Product.ProductIdentifier}"/>
+						<TextCell Text="Type" Detail="{Binding Product.TypeString}"/>
+						<TextCell Text="Title" Detail="{Binding Product.Title}"/>
+						<TextCell Text="Description" Detail="{Binding Product.Description}"/>
+						<TextCell Text="Price" Detail="{Binding Product.Price}"/>
+					</TableSection>
+			    </TableRoot>
+			</TableView>
+
+			<Button Text="Buy" Command="{Binding BuyCommand}"></Button>
+		</StackLayout>
+
+	</ContentPage.Content>
+</ContentPage>
